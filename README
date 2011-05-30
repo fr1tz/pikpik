@@ -1,0 +1,12 @@
+Pikpik 
+
+A program to display and interact with textual items by
+representing them as rows upon rows or columns upon columns
+of rectangles containing pictures and/or (preferably small 
+amounts of) text.
+
+Requirements:
+	- libsdl
+
+Building:
+	Edit and run the ./build script.

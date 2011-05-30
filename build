@@ -1,0 +1,16 @@
+#!/bin/sh
+
+COMPILER=gcc
+
+die()
+{
+	echo "error: $*"
+	exit 1
+}
+
+for dep in $COMPILER sdl-config
+do
+	which $dep > /dev/null || die 'required command' $dep 'not found'
+done
+
+gcc -o pikpik $(sdl-config --cflags --libs) pikpik.c
